@@ -3,13 +3,13 @@
 # An abstract Apache file user database manager class.
 #
 # (C) 2003-2004 Julian Mehnle <julian@mehnle.net>
-# $Id: File.pm,v 1.7 2004/09/09 21:56:58 julian Exp $
+# $Id: File.pm,v 1.8 2004/09/20 23:44:44 julian Exp $
 #
 ##############################################################################
 
 package Apache::Auth::UserDB::File;
 
-our $VERSION = 0.10;
+our $VERSION = 0.11;
 
 use v5.6;
 

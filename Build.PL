@@ -11,9 +11,9 @@ my $build = Module::Build->new(
     requires        => {
         # General requirements:
         perl                => '5.6',
-        Carp                => 0,   # in Perl 5.8
-        IO::File            => 0,   # in Perl 5.8
-        File::Copy          => 0    # in Perl 5.8
+        Carp                => 0,   # in Perl 5.6
+        IO::File            => 0,   # in Perl 5.6
+        File::Copy          => 0    # in Perl 5.6
     },
     recommends      => {
         # Digest requirements:
@@ -26,5 +26,4 @@ my $build = Module::Build->new(
 
 $build->create_build_script();
 
-# $Id: Build.PL,v 1.1 2004/09/09 21:53:03 julian Exp $
-# vim:tw=79
+# $Id: Build.PL,v 1.2 2004/09/20 23:23:55 julian Exp $

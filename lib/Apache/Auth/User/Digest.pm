@@ -3,13 +3,13 @@
 # An Apache digest authentication user class.
 #
 # (C) 2003-2004 Julian Mehnle <julian@mehnle.net>
-# $Id: Digest.pm,v 1.4 2004/09/09 21:56:06 julian Exp $
+# $Id: Digest.pm,v 1.5 2004/09/20 23:44:44 julian Exp $
 #
 ##############################################################################
 
 package Apache::Auth::User::Digest;
 
-our $VERSION = 0.10;
+our $VERSION = 0.11;
 
 use v5.6;
 

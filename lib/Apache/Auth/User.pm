@@ -3,13 +3,13 @@
 # An abstract Apache authentication user class.
 #
 # (C) 2003-2004 Julian Mehnle <julian@mehnle.net>
-# $Id: User.pm,v 1.1 2004/09/09 21:54:23 julian Exp $
+# $Id: User.pm,v 1.2 2004/09/20 23:44:37 julian Exp $
 #
 ##############################################################################
 
 package Apache::Auth::User;
 
-our $VERSION = 0.10;
+our $VERSION = 0.11;
 
 use v5.6;
 

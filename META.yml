@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: Apache-Auth-UserDB
-version: 0.1
+version: 0.11
 author: Julian Mehnle <julian@mehnle.net>
 abstract: ~
 license: perl
@@ -16,23 +16,23 @@ build_requires:
 provides:
   Apache::Auth::User:
     file: lib/Apache/Auth/User.pm
-    version: 0.1
+    version: 0.11
   Apache::Auth::User::Basic:
     file: lib/Apache/Auth/User/Basic.pm
-    version: 0.1
+    version: 0.11
   Apache::Auth::User::Digest:
     file: lib/Apache/Auth/User/Digest.pm
-    version: 0.1
+    version: 0.11
   Apache::Auth::UserDB:
     file: lib/Apache/Auth/UserDB.pm
-    version: 0.1
+    version: 0.11
   Apache::Auth::UserDB::File:
     file: lib/Apache/Auth/UserDB/File.pm
-    version: 0.1
+    version: 0.11
   Apache::Auth::UserDB::File::Basic:
     file: lib/Apache/Auth/UserDB/File/Basic.pm
-    version: 0.1
+    version: 0.11
   Apache::Auth::UserDB::File::Digest:
     file: lib/Apache/Auth/UserDB/File/Digest.pm
-    version: 0.1
+    version: 0.11
 generated_by: Module::Build version 0.25

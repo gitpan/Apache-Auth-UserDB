@@ -1,5 +1,10 @@
 Build.PL
 CHANGES
+debian/changelog
+debian/compat
+debian/control
+debian/copyright
+debian/rules
 lib/Apache/Auth/User.pm
 lib/Apache/Auth/User/Basic.pm
 lib/Apache/Auth/User/Digest.pm

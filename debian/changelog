@@ -1,0 +1,12 @@
+libapache-auth-userdb-perl (0.11) unstable; urgency=low
+
+  * Initial Debian release (no other changes).
+
+ -- Julian Mehnle <julian@mehnle.net>  Tue, 21 Sep 2004 01:45:33 +0200
+
+libapache-auth-userdb-perl (0.10) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Julian Mehnle <julian@mehnle.net>  Mon, 20 Sep 2004 01:12:36 +0200
+
