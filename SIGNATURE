@@ -1,0 +1,41 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.35.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It would check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 bc7b57895c5c48903d1ae9a6de44c8f5a8233d94 Build.PL
+SHA1 a6c50c40dc4fd137960a8f404264a599e6a3291d CHANGES
+SHA1 1c6dab6a4a04bcd77eb97eee895001122cbd644c MANIFEST
+SHA1 d64f5a56eef9a2beb68dae74b1c9c16393ce9214 META.yml
+SHA1 1099db72cd05ad1cad02a0b579d5f8c9786e1e92 Makefile.PL
+SHA1 87c2d29e5417a67245f4135c245803e636de485d README
+SHA1 4781e48f0b5a94c90b4f233eb3e08d03b9c1a394 TODO
+SHA1 465aa2858b853d7fed619750987e0f5b915b3f70 lib/Apache/Auth/User.pm
+SHA1 4af270f47e6c85a644d4c28a2fefaba589645299 lib/Apache/Auth/User/Basic.pm
+SHA1 0f9eb2d0bcd73c963134676de1a03fb646690932 lib/Apache/Auth/User/Digest.pm
+SHA1 e6c813a5b37b8b8ce2a2428bafd1426f4889b99f lib/Apache/Auth/UserDB.pm
+SHA1 d543becb88b1d723a409e234ccac230b077fd0d2 lib/Apache/Auth/UserDB/File.pm
+SHA1 a603885e99ce4f51f4cdfbd782c4482a1ef96bf4 lib/Apache/Auth/UserDB/File/Basic.pm
+SHA1 ff53351fa2c51e3f66bd03968c1d561d300c9e34 lib/Apache/Auth/UserDB/File/Digest.pm
+SHA1 5e43e380f493a5cd3c08db823bb0d60d451a8e08 t/00-user-basic.t
+SHA1 021618dd1694d4bf80256a4e797c3b455dce7542 t/01-user-digest.t
+SHA1 981b678cd62a31d63f758b76fbc96010b96d3545 t/02-userdb-file-basic.t
+SHA1 987a6fbfa6669622bc0244517542f59f97c98e26 t/03-userdb-file-digest.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.4 (GNU/Linux)
+
+iD8DBQFBQNjGaWlsL2XXXh8RAkJGAJ9XgqpPLuf+85/RJSL/ic7CdqMlRQCfSlh3
+g3Ntw88MT/eRCn2yOkfrzzA=
+=2NnP
+-----END PGP SIGNATURE-----

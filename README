@@ -1,0 +1,7 @@
+Apache::Auth::UserDB 0.10
+Manipulation of Apache user databases (file-based and others).
+(C) 2003-2004 Julian Mehnle <julian@mehnle.net>
+<http://www.mehnle.net/software/apache-auth-userdb>
+
+# $Id: README,v 1.1 2004/09/09 21:53:03 julian Exp $
+# vim:tw=79

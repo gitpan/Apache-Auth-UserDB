@@ -1,0 +1,14 @@
+# Legend:
+# --- = A new release
+#   x = Change something significant, or remove a feature
+#   * = Fix a bug
+#   + = Add a feature (in a backwards compatible way)
+
+--- 0.20
+
+  * Add documentation to all classes.
+  * Make Apache::Auth::UserDB::File really, *really* multi-user safe (lock
+    userdb files).
+
+# $Id: TODO,v 1.1 2004/09/09 21:53:03 julian Exp $
+# vim:tw=79
