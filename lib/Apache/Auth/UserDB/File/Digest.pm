@@ -2,16 +2,14 @@
 # Apache::Auth::UserDB::File::Digest
 # A Apache digest authentication file user database manager class.
 #
-# (C) 2003-2004 Julian Mehnle <julian@mehnle.net>
-# $Id: Digest.pm,v 1.2 2004/09/20 23:44:44 julian Exp $
+# (C) 2003-2007 Julian Mehnle <julian@mehnle.net>
+# $Id: Digest.pm 31 2007-09-18 01:39:14Z julian $
 #
 ##############################################################################
 
 package Apache::Auth::UserDB::File::Digest;
 
-our $VERSION = 0.11;
-
-use v5.6;
+use version; our $VERSION = qv('0.120');
 
 use warnings;
 use strict;
@@ -58,5 +56,3 @@ sub _build_entry {
 }
 
 TRUE;
-
-# vim:tw=79

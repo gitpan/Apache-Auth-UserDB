@@ -2,16 +2,14 @@
 # Apache::Auth::User::Basic
 # An Apache basic authentication user class.
 #
-# (C) 2003-2004 Julian Mehnle <julian@mehnle.net>
-# $Id: Basic.pm,v 1.2 2004/09/20 23:44:44 julian Exp $
+# (C) 2003-2007 Julian Mehnle <julian@mehnle.net>
+# $Id: Basic.pm 31 2007-09-18 01:39:14Z julian $
 #
 ##############################################################################
 
 package Apache::Auth::User::Basic;
 
-our $VERSION = 0.11;
-
-use v5.6;
+use version; our $VERSION = qv('0.120');
 
 use warnings;
 use strict;
@@ -26,7 +24,7 @@ use Carp;
 use constant TRUE   => (0 == 0);
 use constant FALSE  => not TRUE;
 
-use constant CRYPT_SALT_CHARACTERS  => ('.', '/', '0'..'9', 'A'..'Z', 'a'..'z');
+use constant crypt_salt_characters  => ('.', '/', '0'..'9', 'A'..'Z', 'a'..'z');
 
 # Interface:
 ##############################################################################
@@ -60,10 +58,8 @@ sub _build_password_digest {
     
     return crypt(
         $self->{password},
-        join('', (CRYPT_SALT_CHARACTERS)[rand(64), rand(64)])
+        join('', ($self->crypt_salt_characters)[rand(64), rand(64)])
     );
 }
 
 TRUE;
-
-# vim:tw=79

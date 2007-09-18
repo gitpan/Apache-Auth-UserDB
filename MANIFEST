@@ -21,5 +21,4 @@ t/01-user-digest.t
 t/02-userdb-file-basic.t
 t/03-userdb-file-digest.t
 TODO
-
 SIGNATURE    Added here by Module::Build

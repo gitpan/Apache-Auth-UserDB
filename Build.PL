@@ -1,4 +1,13 @@
+#
+# Module::Build build script for Apache::Auth::UserDB
+#
+# (C) 2004-2007 Julian Mehnle <julian@mehnle.net>
+# $Id: Build.PL 31 2007-09-18 01:39:14Z julian $
+#
+##############################################################################
+
 use Module::Build;
+use version;
 
 my $build = Module::Build->new(
     module_name     => 'Apache::Auth::UserDB',
@@ -6,17 +15,13 @@ my $build = Module::Build->new(
     license         => 'perl',
     build_requires  => {
         # Build requirements:
-        Test::More          => 0,
+        Module::Build       => 0,
+        Test::More          => 0
     },
     requires        => {
         # General requirements:
-        perl                => '5.6',
-        Carp                => 0,   # in Perl 5.6
-        IO::File            => 0,   # in Perl 5.6
-        File::Copy          => 0    # in Perl 5.6
-    },
-    recommends      => {
-        # Digest requirements:
+        perl                => 'v5.6',
+        version             => 0,
         Digest::MD5         => 0
     },
     create_makefile_pl
@@ -25,5 +30,3 @@ my $build = Module::Build->new(
 );
 
 $build->create_build_script();
-
-# $Id: Build.PL,v 1.2 2004/09/20 23:23:55 julian Exp $

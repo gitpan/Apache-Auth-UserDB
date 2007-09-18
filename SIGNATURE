@@ -1,12 +1,12 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.35.
+signed via the Module::Signature module, version 0.55.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
 
     % cpansign -v
 
-It would check each file's integrity, as well as the signature's
+It will check each file's integrity, as well as the signature's
 validity.  If "==> Signature verified OK! <==" is not displayed,
 the distribution may already have been compromised, and you should
 not run its Makefile.PL or Build.PL.
@@ -14,33 +14,33 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 e453ff0e23a825aa61f7ac8c0e112edaa113a57d Build.PL
-SHA1 5cc9395dbd609ea4f18ba5f65e95a07b9cf1ebf0 CHANGES
-SHA1 6292c772a615db0fe90913a7ed3191f1111acff3 MANIFEST
-SHA1 f5061e80dc1411f02895fccbe479be1ee61c0cff META.yml
-SHA1 1099db72cd05ad1cad02a0b579d5f8c9786e1e92 Makefile.PL
-SHA1 01ac6dea6645d878285f562cce3771c4c6005dc7 README
-SHA1 4781e48f0b5a94c90b4f233eb3e08d03b9c1a394 TODO
-SHA1 0b9e992a355431f8f59fed44f3964f5817f35b56 debian/changelog
-SHA1 9c6b057a2b9d96a4067a749ee3b3b0158d390cf1 debian/compat
-SHA1 8dbedd7a89596f7b55fd789f73ef05d542989bd7 debian/control
-SHA1 848be31b758de17fce8c3600c9c20197bee4ee58 debian/copyright
-SHA1 98beb023c1d40be57dde32fba713dd545128f34a debian/rules
-SHA1 14779f08c7eafe703537a77fc1d6887233a67a72 lib/Apache/Auth/User.pm
-SHA1 6ccffbe09fae71b87f4106e2963efe1f533ff797 lib/Apache/Auth/User/Basic.pm
-SHA1 3b34d57b5cec0cb01e24b7b29fdbf7bc17bfa4a3 lib/Apache/Auth/User/Digest.pm
-SHA1 1cce7ab178deb6081edb596ff37878dab947eba0 lib/Apache/Auth/UserDB.pm
-SHA1 05cec78fc26b50145f187091f7bb83161392edc0 lib/Apache/Auth/UserDB/File.pm
-SHA1 03c19be2b78b2000932ba67539fcc7519d7320d6 lib/Apache/Auth/UserDB/File/Basic.pm
-SHA1 2aa05a7cf71801c5ffee0658eec1f4787237b882 lib/Apache/Auth/UserDB/File/Digest.pm
+SHA1 50db20c33851483bcf2f3be3801b5f93fe68f4aa Build.PL
+SHA1 3ad4b6c520e74537a430d5bc48fffcb09c3bad8c CHANGES
+SHA1 344da11a6feb2297b52dc0d15d4cf440da8a1c4a MANIFEST
+SHA1 7575bc0ace7cc888484b8840ebc85cffb5caae39 META.yml
+SHA1 cd14ada78fb37a0d926edd86eddcdf7f939de582 Makefile.PL
+SHA1 dfa030b168afb1d5e9261c6aafebbb66c7cbd276 README
+SHA1 d5883ce207304767dae018bcd388bc9590c6237d TODO
+SHA1 1b677c1b29fae597616c8cff6c21522d050438e7 debian/changelog
+SHA1 5d9474c0309b7ca09a182d888f73b37a8fe1362c debian/compat
+SHA1 f9b7e307ce49426f84d99f3ccf4903bffed42446 debian/control
+SHA1 1d56e19fdb0eb5cae1dfa8b7e48238920d7b12b8 debian/copyright
+SHA1 e7ef40e521b2c50f9f696d2d26a8b11167ec4119 debian/rules
+SHA1 dd0c636583831e0f477d585d15e494de36d73073 lib/Apache/Auth/User.pm
+SHA1 ff8abe300319807b4b42f3066786981a82aa8a9b lib/Apache/Auth/User/Basic.pm
+SHA1 466602e9a8618aa02a000248cf874afba6d338f3 lib/Apache/Auth/User/Digest.pm
+SHA1 d546cd506aac8daf25f781d81e97004e14661dae lib/Apache/Auth/UserDB.pm
+SHA1 1e3dee18e7e07aab0028f40957b5f0677bdeaaf3 lib/Apache/Auth/UserDB/File.pm
+SHA1 3b09b49a220fa73ed173bb4c16da0c4266cab30c lib/Apache/Auth/UserDB/File/Basic.pm
+SHA1 db27f869f3208cd1940c1dda74094e2b7fd1a886 lib/Apache/Auth/UserDB/File/Digest.pm
 SHA1 5e43e380f493a5cd3c08db823bb0d60d451a8e08 t/00-user-basic.t
 SHA1 021618dd1694d4bf80256a4e797c3b455dce7542 t/01-user-digest.t
 SHA1 981b678cd62a31d63f758b76fbc96010b96d3545 t/02-userdb-file-basic.t
 SHA1 987a6fbfa6669622bc0244517542f59f97c98e26 t/03-userdb-file-digest.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.2.4 (GNU/Linux)
+Version: GnuPG v1.4.6 (GNU/Linux)
 
-iD8DBQFBT2w9aWlsL2XXXh8RAiDiAJ0fFrTI92+6v5esJ4GY3lGHZ6jS9ACeP35B
-Iohhio8SlHjTUOiYJnIJDN4=
-=3BeB
+iD8DBQFG7y+3wL7PKlBZWjsRAnNXAKCGVo0IsxBcVh8JzBl6iduvIVKoPgCg8kn3
+i3lDYsa0rqFvB97coCgUixY=
+=QX0g
 -----END PGP SIGNATURE-----

@@ -1,5 +1,6 @@
 #!/usr/bin/make -f
 
+SOURCE_PACKAGE = apache-auth-userdb-perl
 PACKAGE = $(shell dh_listpackages)
 
 ifndef PERL
@@ -20,7 +21,7 @@ build-stamp:
 clean:
 	dh_testdir
 	dh_testroot
-	-$(BUILD) distclean
+	[ ! -f $(BUILD) ] || $(BUILD) distclean
 	dh_clean build-stamp install-stamp
 
 install: install-stamp
@@ -29,7 +30,7 @@ install-stamp: build-stamp
 	dh_testroot
 	dh_clean -k
 	$(BUILD) test
-	$(BUILD) install destdir=$(TMP)
+	$(BUILD) install destdir=$(TMP) create_packlist=0
 	touch install-stamp
 
 # Build architecture-independent files here:

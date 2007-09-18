@@ -1,17 +1,21 @@
 #
 # Apache::Auth::UserDB
-# An abstract Apache user database manager class.
+# An Apache user database manager class.
 #
-# (C) 2003-2004 Julian Mehnle <julian@mehnle.net>
-# $Id: UserDB.pm,v 1.3 2004/09/20 23:44:37 julian Exp $
+# (C) 2003-2007 Julian Mehnle <julian@mehnle.net>
+# $Id: UserDB.pm 31 2007-09-18 01:39:14Z julian $
 #
 ##############################################################################
 
 package Apache::Auth::UserDB;
 
-our $VERSION = 0.11;
+=head1 NAME
 
-use v5.6;
+Apache::Auth::UserDB - Manipulation of Apache user authentication databases
+
+=cut
+
+use version; our $VERSION = qv('0.120');
 
 use warnings;
 use strict;
@@ -42,14 +46,14 @@ sub delete_user;
 ##############################################################################
 
 sub new {
-    my ($class, %fields) = @_;
+    my ($class, %options) = @_;
     
     my $self = bless(
-	{
-	    users       => [],
-            %fields
-	},
-	$class
+        {
+            users       => [],
+            %options
+        },
+        $class
     );
     
     return $self;
@@ -78,7 +82,7 @@ sub get_user {
     if (@users > 1) {
         carp(
             "There are multiple users matching your search criteria, returning *none*" .
-            "for safety purposes. Fix your selection criteria!"
+            "for safety purposes. Fix your selection criteria or use search_users()!"
         );
         return undef;
     }
@@ -130,10 +134,9 @@ sub add_user {
 
 sub delete_user {
     my ($self, $user) = @_;
-    $self->{users} = [ grep($_ ne $user, @{$self->{users}}) ];
+    $self->{users} = [ grep($_ ne $user, @{$self->{users}}) ]
+        if $user;
     return $self;
 }
 
 TRUE;
-
-# vim:tw=79

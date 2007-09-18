@@ -1,17 +1,15 @@
 #
 # Apache::Auth::User
-# An abstract Apache authentication user class.
+# An Apache authentication user class.
 #
-# (C) 2003-2004 Julian Mehnle <julian@mehnle.net>
-# $Id: User.pm,v 1.2 2004/09/20 23:44:37 julian Exp $
+# (C) 2003-2007 Julian Mehnle <julian@mehnle.net>
+# $Id: User.pm 31 2007-09-18 01:39:14Z julian $
 #
 ##############################################################################
 
 package Apache::Auth::User;
 
-our $VERSION = 0.11;
-
-use v5.6;
+use version; our $VERSION = qv('0.120');
 
 use warnings;
 use strict;
@@ -39,8 +37,8 @@ sub password_digest;
 ##############################################################################
 
 sub new {
-    my ($class, %fields) = @_;
-    my $self = bless(\%fields, $class);
+    my ($class, %options) = @_;
+    my $self = bless(\%options, $class);
     return $self;
 }
 
@@ -62,7 +60,7 @@ sub password {
 sub password_digest {
     my ($self, @value) = @_;
     if (@value) {
-	$self->{password_digest} = $value[0];
+        $self->{password_digest} = $value[0];
     }
     elsif (not defined($self->{password_digest})) {
         $self->{password_digest} = $self->_build_password_digest();
@@ -71,5 +69,3 @@ sub password_digest {
 }
 
 TRUE;
-
-# vim:tw=79
